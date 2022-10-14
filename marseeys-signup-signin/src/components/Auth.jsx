@@ -14,7 +14,7 @@ function VerticallyCenteredModal(props) {
 
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
-  
+
   return (
     <Modal
       {...props}
@@ -40,6 +40,22 @@ function VerticallyCenteredModal(props) {
       <p>
         Make sure that you are typing an existing username.
       </p>
+      <Form>
+        <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
+          <Form.Label>New Password</Form.Label>
+          <Form.Control
+            type="password"
+            placeholder="password"
+          />
+        </Form.Group>
+        <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
+          <Form.Label>Confirm Password</Form.Label>
+          <Form.Control
+            type="password"
+            placeholder="password"
+          />
+        </Form.Group>
+      </Form>
       </Modal.Body>
       <Modal.Footer>
         <Button variant="secondary" onClick={handleClose}>
@@ -170,9 +186,6 @@ export default function (props) {
               Submit
             </button>
           </div>
-          <p className="text-center mt-2">
-            Forgot <a href="#">password?</a>
-          </p>
         </div>
       </form>
     </div>
