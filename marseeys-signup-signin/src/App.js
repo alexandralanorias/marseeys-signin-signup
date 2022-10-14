@@ -1,18 +1,22 @@
 import './App.css';
 import ContainerWelcome from './components/ContainerWelcome';
 
-// importing bootstrap jumbotron
-// import Jumbotron from 'react-bootstrap/Jumbotron';
-// import Button from 'react-bootstrap/Button';
-// import Container from 'react-bootstrap/Container'
+// importing login components
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Auth from "./components/Auth";
 
-// importing elements from react-bootstrap
-// import { Col } from 'react-bootstrap';
+// importing bootstrap
+import "bootstrap/dist/css/bootstrap.min.css"
 
 function App() {
   return (
     <div className="App">
-        <ContainerWelcome/>
+        {/* <ContainerWelcome/> */}
+        <BrowserRouter>
+          <Routes>
+            <Route path="/auth" element={<Auth />} />
+          </Routes>
+        </BrowserRouter>
     </div>
   );
 }
