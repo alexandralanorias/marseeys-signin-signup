@@ -32,7 +32,7 @@ function VerticallyCenteredModal(props) {
           <Form.Label>Username</Form.Label>
           <Form.Control
             type="text"
-            placeholder="no spaces, e.g. jsbach"
+            placeholder="no spaces please"
             autoFocus
           />
         </Form.Group>
@@ -141,7 +141,7 @@ export default function (props) {
             <input
               type="text"
               className="form-control mt-1"
-              placeholder="no spaces, e.g. jsbach"
+              placeholder="no spaces please"
             />
           </div>
           <div className="form-group mt-3">
